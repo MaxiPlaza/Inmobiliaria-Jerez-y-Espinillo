@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0A0A0A;
+  --color-brand-gold: #C9A84C;
+  --color-brand-gold-hover: #B8963B;
+  --color-brand-gray-dark: #1A1A1A;
+  --color-brand-gray-light: #2A2A2A;
+  
+  --font-sans: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+  
+  /* Animación de pulso concéntrico para el botón de WhatsApp */
+  --animate-whatsapp-pulse: whatsapp-pulse 2s infinite;
+}
+
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(201, 168, 76, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(201, 168, 76, 0);
+  }
+}
+
+/* Estilos globales y reset específicos de Jerez°Espinillo */
+html, body {
+  background-color: #0A0A0A;
+  color: #E5E7EB;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+/* Barras de desplazamiento estilizadas y premium */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A84C;
+}
+
+/* Estilo Glassmorphism para elementos UI premium */
+.glass-panel {
+  background: rgba(26, 26, 26, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 168, 76, 0.1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Utilidad para degradados de texto dorado */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF 0%, #C9A84C 50%, #8E7023 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
