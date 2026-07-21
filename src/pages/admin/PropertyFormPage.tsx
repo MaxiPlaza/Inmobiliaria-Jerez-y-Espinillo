@@ -112,9 +112,10 @@ export const PropertyFormPage: React.FC = () => {
           throw new Error('No se pudo crear la propiedad.');
         }
       }
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      setErrorMsg(err.message || 'Ocurrió un error inesperado al guardar la propiedad.');
+      const errMsg = err instanceof Error ? err.message : 'Ocurrió un error inesperado al guardar la propiedad.';
+      setErrorMsg(errMsg);
     } finally {
       setSaving(false);
     }

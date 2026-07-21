@@ -59,8 +59,9 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({ images, onChange, prop
 
       // Añadir nuevas URLs al array existente
       onChange([...images, ...uploadedUrls]);
-    } catch (err: any) {
-      console.warn("Subida fallida o simulada (Supabase no vinculado): ", err.message);
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      console.warn("Subida fallida o simulada (Supabase no vinculado): ", errMsg);
       
       // Simulación de carga local agregando imágenes placeholder elegantes
       const simulatedPlaceholders = [

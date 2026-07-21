@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import type { Consulta } from '../types';
 
 export const MOCK_CONSULTAS: Consulta[] = [
@@ -46,6 +46,7 @@ export const useConsultas = () => {
   const fetchConsultas = useCallback(async () => {
     setLoading(true);
     setError(null);
+    const configured = isSupabaseConfigured();
     try {
       const { data, error: sbError } = await supabase
         .from('consultas')
@@ -65,20 +66,28 @@ export const useConsultas = () => {
       if (sbError) throw sbError;
 
       if (data && data.length > 0) {
-        // Normalizar estructura si es necesario
-        setConsultas(data as any[]);
+        setConsultas(data as unknown as Consulta[]);
       } else {
+        // Si está configurado en producción y está vacío, mostramos vacío. De lo contrario, mock
+        setConsultas(configured ? [] : MOCK_CONSULTAS);
+      }
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      if (configured) {
+        console.error("Error al obtener consultas de Supabase:", errMsg);
+        setError("Error al cargar consultas de la base de datos.");
+        setConsultas([]);
+      } else {
+        console.warn("Supabase no conectado o error, utilizando Consultas Mock: ", errMsg);
         setConsultas(MOCK_CONSULTAS);
       }
-    } catch (err: any) {
-      console.warn("Supabase no conectado o error, utilizando Consultas Mock: ", err.message);
-      setConsultas(MOCK_CONSULTAS);
     } finally {
       setLoading(false);
     }
   }, []);
 
   const addConsulta = useCallback(async (nueva: Omit<Consulta, 'id' | 'created_at'>): Promise<boolean> => {
+    const configured = isSupabaseConfigured();
     try {
       const { error: sbError } = await supabase
         .from('consultas')
@@ -90,6 +99,10 @@ export const useConsultas = () => {
       fetchConsultas();
       return true;
     } catch (err) {
+      if (configured) {
+        console.error("Error al registrar consulta en Supabase:", err);
+        return false;
+      }
       console.warn("Supabase insert falló, simulando consulta localmente");
       // Simulación local
       const simNew: Consulta = {
@@ -123,6 +136,7 @@ export const useConsultas = () => {
   }, [fetchConsultas]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchConsultas();
   }, [fetchConsultas]);
 

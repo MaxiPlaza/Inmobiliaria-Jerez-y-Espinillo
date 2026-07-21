@@ -9,29 +9,29 @@ export const Servicios: React.FC = () => {
   const services = [
     {
       icon: <HomeIcon className="w-6 h-6" />,
-      title: "Comercialización de Ventas",
-      description: "Desarrollamos una estrategia multimedia a medida para tu propiedad VIP. Publicamos en redes de alto impacto, portales premium y realizamos visitas guiadas privadas bajo rigurosa coordinación de seguridad.",
+      title: "Comercialización de Propiedades",
+      description: "Nos especializamos en la comercialización de casas, departamentos, terrenos y propiedades para inversión. Brindamos asesoramiento personalizado, coordinamos y realizamos visitas a los inmuebles, acompañando a nuestros clientes durante todo el proceso de compra o venta.",
       linkText: "Explorar Propiedades en Venta",
       type: "venta"
     },
     {
       icon: <Key className="w-6 h-6" />,
-      title: "Gestión Integral de Alquileres",
-      description: "Garantizamos contratos blindados y análisis exhaustivos de solvencia de inquilinos y garantes. Nos encargamos de todo el proceso administrativo para que rentabilizar tu propiedad sea una experiencia pacífica.",
+      title: "GESTION INTEGRAL DE ALQUILERES",
+      description: "Brindamos un servicio completo de gestión de alquileres, acompañando a propietarios e inquilinos durante todo el proceso. Nos ocupamos de la promoción de los inmuebles, selección de interesados, confección de contratos y seguimiento de cada operación.",
       linkText: "Ver Alquileres Disponibles",
       type: "alquiler"
     },
     {
       icon: <Landmark className="w-6 h-6" />,
-      title: "Desarrollos & Lotes (Terrenos)",
-      description: "Ofrecemos oportunidades exclusivas en barrios privados y zonas de gran revalorización en Salta y el interior. Asesoramiento completo sobre zonificación, factibilidad de servicios e índices de plusvalía.",
+      title: "DESARROLLOS Y LOTES",
+      description: "Invertí hoy en el lugar donde construirás tu mañana. Ofrecemos oportunidades en desarrollos inmobiliarios, lotes y propiedades en pozo, ideales para quienes buscan invertir, construir o acceder a su primera vivienda.",
       linkText: "Ver Terrenos Disponibles",
       type: "terreno"
     },
     {
       icon: <ClipboardCheck className="w-6 h-6" />,
-      title: "Tasaciones Técnicas Certificadas",
-      description: "Determinamos el valor real de mercado de tu propiedad basándonos en rigurosos estudios de mercado comparativos y factores constructivos. Aprobado y certificado bajo firmas habilitadas matriculadas.",
+      title: "Tasaciones",
+      description: "Realizamos tasaciones precisas y confiables de casas, departamentos, terrenos y locales comerciales. Todas nuestras valuaciones son realizadas por un Corredor Inmobiliario Matriculado, garantizando profesionalismo, seriedad y conocimiento del mercado inmobiliario de Salta.na inversión y una oportunidad de crecimiento.",
       linkText: "Solicitar Tasación Profesional",
       type: "tasacion"
     }

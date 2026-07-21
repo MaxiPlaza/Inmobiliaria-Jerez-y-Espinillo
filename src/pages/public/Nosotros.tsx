@@ -13,9 +13,9 @@ export const Nosotros: React.FC = () => {
         {/* Cabecera */}
         <div className="text-center mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Nuestra Firma</span>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Sobre Jerez°Espinillo</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Bienvenidos a Jerez y Espinillo Servicios Inmobiliarios</h1>
           <p className="max-w-xl mx-auto text-sm text-gray-500 leading-relaxed font-light">
-            Arquitectura de Negocios Inmobiliarios. Fundados con la premisa de resguardar el patrimonio de nuestros clientes bajo estándares internacionales.
+            Una empresa salteña que surge de la fusión de dos visiones complementarias.
           </p>
         </div>
 
@@ -25,14 +25,14 @@ export const Nosotros: React.FC = () => {
           {/* Texto Historia */}
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wide">
-              Trayectoria, Profesionalismo <br />
-              & <span className="text-brand-gold text-gold-gradient">Atención Matriculada</span>
+              Corredor Inmobiliario y Martillero Publico <br />
+              & <span className="text-brand-gold text-gold-gradient">Oscar Daniel Espinillo Cifuentes y la Dra. Claudia Jerez, Abogada</span>
             </h2>
             <p className="text-sm text-gray-400 leading-relaxed font-light">
-              Nacida en la histórica provincia de Salta, **Jerez°Espinillo** surge de la fusión de dos visiones complementarias del corretaje inmobiliario moderno. Nos especializamos en la comercialización de residencias premium, desarrollos urbanísticos privados y tasaciones de precisión técnica.
+              Comprometidos con brindar soluciones inmobilirias confiables, profesionales y personalizadas.
             </p>
             <p className="text-sm text-gray-400 leading-relaxed font-light">
-              Nuestro gran diferencial radica en la **atención personalizada y profesional con matriculados habilitados**. Entendemos que cada transacción inmobiliaria representa un paso crítico para nuestros clientes. Por ello, auditamos legal y financieramente cada propiedad para asegurar operaciones totalmente transparentes y blindadas jurídicamente.
+              Nos especializamos en la compra, venta, alquiler, administración y tasación de propiedades, acompañando a nuestros clientes en cada etapa del proceso con transparencia, responsabilidad y atención cercana.
             </p>
             <div className="flex items-center gap-4 mt-2">
               <div className="flex -space-x-3">
@@ -40,7 +40,7 @@ export const Nosotros: React.FC = () => {
                 <div className="w-10 h-10 rounded-full border-2 border-brand-black bg-brand-gray-light flex items-center justify-center font-bold text-white text-xs">ME</div>
               </div>
               <p className="text-xs text-gray-500 font-medium leading-relaxed">
-                Asesorado por <span className="text-white font-semibold">Martin Espinillo</span> y nuestro equipo matriculado de Salta.
+                Asesorado por <span className="text-white font-semibold">Oscar Daniel Espinillo</span> y la Dra. Claudia Jerez.
               </p>
             </div>
           </div>
@@ -80,14 +80,14 @@ export const Nosotros: React.FC = () => {
             </p>
           </div>
 
-          {/* Visión */}
+          {/* Objetivo */}
           <div className="p-8 rounded-xl bg-brand-gray-dark border border-brand-gray-light text-left">
             <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-brand-gold/10 text-brand-gold mb-6">
               <Eye className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Nuestra Visión</h3>
+            <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Nuestro Objetivo</h3>
             <p className="text-sm text-gray-500 leading-relaxed font-light">
-              Consolidarnos como la boutique inmobiliaria de referencia en el noroeste argentino (NOA) para el segmento corporativo y residencial de alta gama, destacando por nuestro trato VIP personalizado y la seguridad contractual.
+              Nuestro objetivo es ayudar a familias, emprendedores e inversores a encontrar las mejores oportunidades inmobiliarias en la provincia de Salta,ofreciendo un servicio basado en la confianza, el compromiso y la excelencia profesional. En Jerez y Espinillo entendemos que cada propiedad es mucho más que una operación comercial: es un proyecto de vida.
             </p>
           </div>
 

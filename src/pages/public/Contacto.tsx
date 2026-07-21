@@ -42,7 +42,7 @@ export const Contacto: React.FC = () => {
       } else {
         setErrorMsg('Hubo un error al registrar tu consulta. Inténtalo nuevamente.');
       }
-    } catch (err: any) {
+    } catch {
       setErrorMsg('Error de red. Inténtalo nuevamente.');
     } finally {
       setLoading(false);
@@ -171,7 +171,7 @@ export const Contacto: React.FC = () => {
                 <div>
                   <h4 className="text-xs font-bold text-white uppercase tracking-wider">Oficinas</h4>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    Avenida Belgrano 1200,<br />
+                    Oficina Balcarce 175 Oficina 312,<br />
                     Salta Capital, Argentina
                   </p>
                 </div>
@@ -184,8 +184,7 @@ export const Contacto: React.FC = () => {
                 <div>
                   <h4 className="text-xs font-bold text-white uppercase tracking-wider">Email</h4>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    contacto@jerezespinillo.com<br />
-                    tasaciones@jerezespinillo.com
+                    danielespinillo@gmail.com
                   </p>
                 </div>
               </div>

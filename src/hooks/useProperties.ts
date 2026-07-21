@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import type { Propiedad } from '../types';
 
 // Mock data realista para respaldar la experiencia de usuario si Supabase no está configurado aún
@@ -147,6 +147,7 @@ export const useProperties = () => {
   const fetchProperties = useCallback(async () => {
     setLoading(true);
     setError(null);
+    const configured = isSupabaseConfigured();
     try {
       // Intentar consultar a Supabase
       const { data, error: sbError } = await supabase
@@ -161,19 +162,26 @@ export const useProperties = () => {
       if (data && data.length > 0) {
         setProperties(data as Propiedad[]);
       } else {
-        // Si la tabla está vacía, usar mock
+        // Si la tabla está vacía y está en producción, mostramos vacío. De lo contrario, mock
+        setProperties(configured ? [] : MOCK_PROPIEDADES);
+      }
+    } catch (err: unknown) {
+      const errMsg = err instanceof Error ? err.message : String(err);
+      if (configured) {
+        console.error("Error al obtener propiedades de Supabase:", errMsg);
+        setError("Error al cargar propiedades de la base de datos.");
+        setProperties([]);
+      } else {
+        console.warn("Supabase no conectado o error, utilizando Mock data en su lugar: ", errMsg);
         setProperties(MOCK_PROPIEDADES);
       }
-    } catch (err: any) {
-      console.warn("Supabase no conectado o error, utilizando Mock data en su lugar: ", err.message);
-      // Fallback a mock data para asegurar visualización premium instantánea
-      setProperties(MOCK_PROPIEDADES);
     } finally {
       setLoading(false);
     }
   }, []);
 
   const getPropertyById = useCallback(async (id: string): Promise<Propiedad | null> => {
+    const configured = isSupabaseConfigured();
     try {
       const { data, error: sbError } = await supabase
         .from('propiedades')
@@ -184,6 +192,10 @@ export const useProperties = () => {
       if (sbError) throw sbError;
       return data as Propiedad;
     } catch (err) {
+      if (configured) {
+        console.error("Error al obtener propiedad por ID:", err);
+        return null;
+      }
       // Fallback a mock data
       const localMock = MOCK_PROPIEDADES.find(p => p.id === id);
       return localMock || null;
@@ -213,12 +225,17 @@ export const useProperties = () => {
           .insert({ propiedad_id: propiedadId, fecha: today, visitas: 1 });
       }
     } catch (err) {
-      console.log('Metrica visitas simulada');
+      if (isSupabaseConfigured()) {
+        console.error('Error al registrar visitas:', err);
+      } else {
+        console.log('Metrica visitas simulada');
+      }
     }
   }, []);
 
   // Agregar propiedad
   const addProperty = useCallback(async (nueva: Omit<Propiedad, 'id' | 'created_at' | 'updated_at'>): Promise<Propiedad | null> => {
+    const configured = isSupabaseConfigured();
     try {
       const { data, error: sbError } = await supabase
         .from('propiedades')
@@ -233,6 +250,10 @@ export const useProperties = () => {
       setProperties(prev => [propConId, ...prev]);
       return propConId;
     } catch (err) {
+      if (configured) {
+        console.error("Error al agregar propiedad:", err);
+        throw err;
+      }
       // Simulación local para el panel admin
       const simNew: Propiedad = {
         ...nueva,
@@ -250,6 +271,7 @@ export const useProperties = () => {
 
   // Editar propiedad
   const editProperty = useCallback(async (id: string, editada: Partial<Propiedad>): Promise<boolean> => {
+    const configured = isSupabaseConfigured();
     try {
       const { error: sbError } = await supabase
         .from('propiedades')
@@ -261,6 +283,10 @@ export const useProperties = () => {
       setProperties(prev => prev.map(p => p.id === id ? { ...p, ...editada, updated_at: new Date().toISOString() } : p));
       return true;
     } catch (err) {
+      if (configured) {
+        console.error("Error al editar propiedad:", err);
+        throw err;
+      }
       // Simulación local
       const index = MOCK_PROPIEDADES.findIndex(p => p.id === id);
       if (index !== -1) {
@@ -274,6 +300,7 @@ export const useProperties = () => {
 
   // Eliminar propiedad
   const deleteProperty = useCallback(async (id: string): Promise<boolean> => {
+    const configured = isSupabaseConfigured();
     try {
       const { error: sbError } = await supabase
         .from('propiedades')
@@ -285,6 +312,10 @@ export const useProperties = () => {
       setProperties(prev => prev.filter(p => p.id !== id));
       return true;
     } catch (err) {
+      if (configured) {
+        console.error("Error al eliminar propiedad:", err);
+        throw err;
+      }
       // Simulación local
       const index = MOCK_PROPIEDADES.findIndex(p => p.id === id);
       if (index !== -1) {
@@ -297,6 +328,7 @@ export const useProperties = () => {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     fetchProperties();
   }, [fetchProperties]);
 

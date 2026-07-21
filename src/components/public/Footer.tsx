@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building2, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import logo from '../../assets/logo.jpg';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ export const Footer: React.FC = () => {
           {/* Logo & Descripción */}
           <div className="flex flex-col gap-4 text-left">
             <Link to="/" className="flex items-center gap-2">
-              <Building2 className="w-6 h-6 text-brand-gold" />
+              <img src={logo} alt="Logo Jerez y Espinillo" className="w-6 h-6 object-contain" />
               <span className="text-xl font-bold tracking-wider text-white">
                 Jerez<span className="text-brand-gold">°</span>Espinillo
               </span>
@@ -42,8 +43,10 @@ export const Footer: React.FC = () => {
             <div>
               <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4 md:text-right">Contacto</h4>
               <p className="text-sm text-gray-500 mb-4 md:text-right">
-                Salta, Argentina<br />
-                contacto@jerezespinillo.com
+                 Oficina Balcarce 175 Oficina 312 Salta, Argentina<br />
+                danielespinillo@gmail.com <br />
+                Oscar Daniel Espinillo Cifuentes <br />
+                Cucis 650 m.p
               </p>
               <div className="flex items-center gap-4 md:justify-end">
                 <a
@@ -85,7 +88,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-gray-600">
-          <p>© {currentYear} Jerez°Espinillo. Todos los derechos reservados. Arquitectura de Negocios Inmobiliarios.</p>
+          <p>© {currentYear} Jerez Y Espinillo. Todos los derechos reservados. Arquitectura de Negocios Inmobiliarios.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-brand-gold transition-colors">Términos de Servicio</a>
             <a href="#" className="hover:text-brand-gold transition-colors">Política de Privacidad</a>

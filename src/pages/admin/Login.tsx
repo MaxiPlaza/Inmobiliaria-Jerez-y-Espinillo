@@ -4,6 +4,7 @@ import { Building2, AlertTriangle, KeyRound } from 'lucide-react';
 import { useAuth, MOCK_ADMIN_EMAIL, MOCK_ADMIN_PASSWORD } from '../../hooks/useAuth';
 import { Button } from '../../components/shared/Button';
 import { Input } from '../../components/shared/Input';
+import { isSupabaseConfigured } from '../../lib/supabase';
 
 export const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export const Login: React.FC = () => {
       } else {
         setErrorMsg(res.error || 'Credenciales incorrectas.');
       }
-    } catch (err: any) {
+    } catch {
       setErrorMsg('Error al conectar con el servidor.');
     } finally {
       setLoading(false);
@@ -100,18 +101,6 @@ export const Login: React.FC = () => {
           </Button>
         </form>
 
-        {/* Guía de Credenciales Simuladas de Desarrollador */}
-        <div className="mt-8 pt-4 border-t border-brand-gold/10 w-full flex flex-col gap-2 text-left">
-          <div className="flex items-center gap-2 text-[10px] uppercase font-bold text-brand-gold tracking-wider">
-            <KeyRound className="w-3.5 h-3.5" />
-            <span>Credenciales de Desarrollador</span>
-          </div>
-          <p className="text-[10px] text-gray-500 leading-relaxed">
-            Si no has vinculado Supabase aún, inicia sesión localmente con:<br />
-            Usuario: <span className="text-gray-300 font-semibold select-all">{MOCK_ADMIN_EMAIL}</span><br />
-            Clave: <span className="text-gray-300 font-semibold select-all">{MOCK_ADMIN_PASSWORD}</span>
-          </p>
-        </div>
 
       </div>
 

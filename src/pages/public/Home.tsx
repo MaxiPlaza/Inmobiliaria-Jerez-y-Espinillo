@@ -40,11 +40,11 @@ export const Home: React.FC = () => {
             Residencias Exclusivas
           </span>
           <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
-            Tu propiedad ideal <br className="hidden sm:inline" />
-            en <span className="text-brand-gold text-gold-gradient">Salta y Argentina</span>
+            Trabajamos para brindar soluciones inmobiliarias confiables, seguras <br className="hidden sm:inline" />
+            y <span className="text-brand-gold text-gold-gradient">adaptadas a las necesidades de cada cliente</span>
           </h1>
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-gray-400 mb-10 leading-relaxed font-light">
-            Descubre nuestra selección curada de propiedades exclusivas. Ofrecemos asesoramiento profesional de alta gama con martilleros matriculados.
+            Nuestro objetivo es generar oportunidades que permitan concretar proyectos de vida y negocios con total confianza.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
