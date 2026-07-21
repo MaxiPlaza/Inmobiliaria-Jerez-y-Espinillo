@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Building2, AlertTriangle, KeyRound } from 'lucide-react';
-import { useAuth, MOCK_ADMIN_EMAIL, MOCK_ADMIN_PASSWORD } from '../../hooks/useAuth';
+import { Building2, AlertTriangle } from 'lucide-react';
+import { useAuth } from '../../hooks/useAuth';
 import { Button } from '../../components/shared/Button';
 import { Input } from '../../components/shared/Input';
-import { isSupabaseConfigured } from '../../lib/supabase';
 
 export const Login: React.FC = () => {
   const navigate = useNavigate();
