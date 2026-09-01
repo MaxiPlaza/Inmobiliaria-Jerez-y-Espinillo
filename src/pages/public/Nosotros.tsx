@@ -28,10 +28,10 @@ export const Nosotros: React.FC = () => {
                <br />
                <span className="text-brand-gold text-gold-gradient"></span>
             </h2>
-            <p className="text-sm text-gray-400 leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-gray-300 leading-8 font-light">
               Comprometidos con brindar soluciones inmobilirias confiables, profesionales y personalizadas.
             </p>
-            <p className="text-sm text-gray-400 leading-relaxed font-light">
+            <p className="text-base sm:text-lg text-gray-300 leading-8 font-light">
               Nos especializamos en la compra, venta, alquiler, administración y tasación de propiedades, acompañando a nuestros clientes en cada etapa del proceso con transparencia, responsabilidad y atención cercana.
             </p>
             <div className="flex items-center gap-4 mt-2">
