@@ -25,9 +25,9 @@ export const Consultas: React.FC = () => {
   const handleAbrirWhatsapp = (telefono: string, nombre: string, tituloPropiedad?: string) => {
     // Limpiar caracteres no numéricos excepto el código de país
     const cleanPhone = telefono.replace(/\D/g, '');
-    let text = `Hola ${nombre}, me comunico desde la inmobiliaria Jerez°Espinillo en respuesta a tu consulta.`;
+    let text = `Hola ${nombre}, me comunico desde la inmobiliaria MagnusPropiedades en respuesta a tu consulta.`;
     if (tituloPropiedad) {
-      text = `Hola ${nombre}, me comunico desde la inmobiliaria Jerez°Espinillo en respuesta a tu consulta sobre la propiedad "${tituloPropiedad}".`;
+      text = `Hola ${nombre}, me comunico desde la inmobiliaria MagnusPropiedades en respuesta a tu consulta sobre la propiedad "${tituloPropiedad}".`;
     }
     window.open(`https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`, '_blank');
   };

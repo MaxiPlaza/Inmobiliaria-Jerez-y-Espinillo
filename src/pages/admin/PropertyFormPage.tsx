@@ -151,7 +151,7 @@ export const PropertyFormPage: React.FC = () => {
           <p className="text-xs text-gray-500 mt-1">
             {isEditing 
               ? 'Modifica los detalles, características y galería de fotos de la propiedad existente.' 
-              : 'Agrega una nueva residencia premium al catálogo oficial de Jerez°Espinillo.'}
+              : 'Agrega una nueva residencia premium al catálogo oficial de MagnusPropiedades.'}
           </p>
         </div>
 

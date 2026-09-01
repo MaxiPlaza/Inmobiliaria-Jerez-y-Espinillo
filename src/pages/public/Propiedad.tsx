@@ -320,7 +320,7 @@ export const Propiedad: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-sm font-semibold text-white">Martín Espinillo</h4>
-                <p className="text-xs text-gray-500 font-medium">Director Comercial Jerez°Espinillo</p>
+                <p className="text-xs text-gray-500 font-medium">Director Comercial MagnusPropiedades</p>
               </div>
             </div>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo Magnus (1).png';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,9 +32,9 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={logo} alt="Logo Jerez y Espinillo" className="w-7 h-7 object-contain transition-transform duration-500 group-hover:rotate-12" />
-            <span className="text-xl font-bold tracking-wider text-white font-sans">
-              Jerez<span className="text-brand-gold font-light">Y</span>Espinillo
+            <img src={logo} alt="Logo MagnusPropiedades" className="w-9 h-9 object-contain transition-transform duration-500 group-hover:rotate-12" />
+            <span className="text-lg sm:text-xl font-bold tracking-wider text-white font-sans">
+              Magnus<span className="text-brand-gold">Propiedades</span>
             </span>
           </Link>
 
@@ -91,9 +91,9 @@ export const Navbar: React.FC = () => {
       >
         <div className="flex items-center justify-between pb-6 border-b border-brand-gold/10">
           <Link to="/" className="flex items-center gap-2" onClick={toggleMenu}>
-            <img src={logo} alt="Logo Jerez y Espinillo" className="w-5 h-5 object-contain" />
-            <span className="text-lg font-bold text-white tracking-wide">
-              Jerez<span className="text-brand-gold">°</span>Espinillo
+            <img src={logo} alt="Logo MagnusPropiedades" className="w-6 h-6 object-contain" />
+            <span className="text-base font-bold text-white tracking-wide">
+              Magnus<span className="text-brand-gold">Propiedades</span>
             </span>
           </Link>
           <button

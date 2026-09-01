@@ -3,7 +3,7 @@ import { supabase, isSupabaseConfigured } from '../lib/supabase';
 import type { User, Session } from '@supabase/supabase-js';
 
 // Predefinidos de simulación para desarrollo inmediato
-export const MOCK_ADMIN_EMAIL = "admin@jerezespinillo.com";
+export const MOCK_ADMIN_EMAIL = "admin@magnuspropiedades.com";
 export const MOCK_ADMIN_PASSWORD = "admin123";
 
 export const useAuth = () => {
@@ -24,7 +24,7 @@ export const useAuth = () => {
             setUser(currentSession.user);
           } else {
             // Comprobar si hay una sesión simulada en localStorage
-            const simUser = localStorage.getItem('jerez_sim_user');
+            const simUser = localStorage.getItem('magnus_sim_user');
             if (simUser) {
               const parsedUser = JSON.parse(simUser);
               setUser(parsedUser);
@@ -40,7 +40,7 @@ export const useAuth = () => {
         }
       } catch {
         console.warn('Supabase Auth error o no disponible, comprobando sesión simulada');
-        const simUser = localStorage.getItem('jerez_sim_user');
+        const simUser = localStorage.getItem('magnus_sim_user');
         if (simUser && mounted) {
           const parsedUser = JSON.parse(simUser);
           setUser(parsedUser);
@@ -115,7 +115,7 @@ export const useAuth = () => {
           created_at: new Date().toISOString()
         };
         
-        localStorage.setItem('jerez_sim_user', JSON.stringify(simUserObj));
+        localStorage.setItem('magnus_sim_user', JSON.stringify(simUserObj));
         setUser(simUserObj as unknown as User);
         setSession({
           access_token: 'simulated-token',
@@ -146,6 +146,7 @@ export const useAuth = () => {
     } catch {
       console.log('Error de salida silenciado');
     } finally {
+      localStorage.removeItem('magnus_sim_user');
       localStorage.removeItem('jerez_sim_user');
       setUser(null);
       setSession(null);

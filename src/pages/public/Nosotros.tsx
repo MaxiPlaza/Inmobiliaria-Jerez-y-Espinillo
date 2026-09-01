@@ -13,7 +13,7 @@ export const Nosotros: React.FC = () => {
         {/* Cabecera */}
         <div className="text-center mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Nuestra Firma</span>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Bienvenidos a Jerez y Espinillo Servicios Inmobiliarios</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Bienvenidos a MagnusPropiedades</h1>
           <p className="max-w-xl mx-auto text-sm text-gray-500 leading-relaxed font-light">
             Una empresa salteña que surge de la fusión de dos visiones complementarias.
           </p>
@@ -87,7 +87,7 @@ export const Nosotros: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Nuestro Objetivo</h3>
             <p className="text-sm text-gray-500 leading-relaxed font-light">
-              Nuestro objetivo es ayudar a familias, emprendedores e inversores a encontrar las mejores oportunidades inmobiliarias en la provincia de Salta,ofreciendo un servicio basado en la confianza, el compromiso y la excelencia profesional. En Jerez y Espinillo entendemos que cada propiedad es mucho más que una operación comercial: es un proyecto de vida.
+              Nuestro objetivo es ayudar a familias, emprendedores e inversores a encontrar las mejores oportunidades inmobiliarias en la provincia de Salta, ofreciendo un servicio basado en la confianza, el compromiso y la excelencia profesional. En MagnusPropiedades entendemos que cada propiedad es mucho más que una operación comercial: es un proyecto de vida.
             </p>
           </div>
 

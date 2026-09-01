@@ -256,7 +256,7 @@ export const Dashboard: React.FC = () => {
           <div className="flex items-center justify-between pb-4 border-b border-brand-gold/10 mb-6">
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-white">Administración Rápida</h3>
-              <p className="text-[10px] text-gray-500 mt-0.5">Acceso rápido a las tareas críticas de Jerez°Espinillo</p>
+              <p className="text-[10px] text-gray-500 mt-0.5">Acceso rápido a las tareas críticas de MagnusPropiedades</p>
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

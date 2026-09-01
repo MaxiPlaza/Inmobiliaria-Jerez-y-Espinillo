@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo Magnus (1).png';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -14,9 +14,9 @@ export const Footer: React.FC = () => {
           {/* Logo & Descripción */}
           <div className="flex flex-col gap-4 text-left">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="Logo Jerez y Espinillo" className="w-6 h-6 object-contain" />
-              <span className="text-xl font-bold tracking-wider text-white">
-                Jerez<span className="text-brand-gold">°</span>Espinillo
+              <img src={logo} alt="Logo MagnusPropiedades" className="w-8 h-8 object-contain" />
+              <span className="text-lg sm:text-xl font-bold tracking-wider text-white">
+                Magnus<span className="text-brand-gold">Propiedades</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-sm text-gray-500">
@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
                   </svg>
                 </a>
                 <a
-                  href="mailto:contacto@jerezespinillo.com"
+                  href="mailto:contacto@magnuspropiedades.com"
                   className="w-10 h-10 flex items-center justify-center rounded-full bg-brand-gray-dark border border-brand-gold/15 hover:border-brand-gold hover:text-brand-gold transition-all duration-300 cursor-pointer"
                   aria-label="Email"
                 >
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 text-xs text-gray-600">
-          <p>© {currentYear} Jerez Y Espinillo. Todos los derechos reservados. Arquitectura de Negocios Inmobiliarios.</p>
+          <p>© {currentYear} MagnusPropiedades. Todos los derechos reservados. Arquitectura de Negocios Inmobiliarios.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-brand-gold transition-colors">Términos de Servicio</a>
             <a href="#" className="hover:text-brand-gold transition-colors">Política de Privacidad</a>

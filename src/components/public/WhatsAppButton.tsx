@@ -7,11 +7,11 @@ export const WhatsAppButton: React.FC = () => {
       href={getWhatsappFloatingLink()}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-14 h-14 bg-brand-gold hover:bg-brand-gold-hover text-[#0A0A0A] rounded-full shadow-[0_4px_20px_rgba(201,168,76,0.4)] transition-all duration-300 hover:scale-110 animate-whatsapp-pulse cursor-pointer"
+      className="fixed bottom-5 right-5 z-40 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] hover:bg-[#1ebe5b] text-white rounded-full shadow-[0_4px_18px_rgba(37,211,102,0.35)] transition-all duration-300 hover:scale-105 animate-whatsapp-pulse cursor-pointer"
       aria-label="Contactar por WhatsApp"
     >
       <svg
-        className="w-7 h-7 fill-current"
+        className="w-5 h-5 sm:w-7 sm:h-7 fill-current"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

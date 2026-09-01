@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Building2, AlertTriangle } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { Button } from '../../components/shared/Button';
 import { Input } from '../../components/shared/Input';
+import logo from '../../assets/logo Magnus (1).png';
 
 export const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -46,10 +47,10 @@ export const Login: React.FC = () => {
       <div className="w-full max-w-md bg-brand-gray-dark border border-brand-gold/15 rounded-2xl p-8 sm:p-10 shadow-2xl flex flex-col items-center">
         
         {/* Logo */}
-        <div className="flex items-center gap-2 mb-8 select-none">
-          <Building2 className="w-8 h-8 text-brand-gold" />
-          <span className="text-2xl font-extrabold tracking-wider text-white">
-            Jerez<span className="text-brand-gold">°</span>Espinillo
+        <div className="flex items-center gap-3 mb-8 select-none">
+          <img src={logo} alt="Logo MagnusPropiedades" className="w-12 h-12 object-contain" />
+          <span className="text-xl font-extrabold tracking-wider text-white">
+            Magnus<span className="text-brand-gold">Propiedades</span>
           </span>
         </div>
 
@@ -72,7 +73,7 @@ export const Login: React.FC = () => {
             id="email"
             label="Correo Electrónico"
             type="email"
-            placeholder="ejemplo@jerezespinillo.com"
+            placeholder="ejemplo@magnuspropiedades.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required

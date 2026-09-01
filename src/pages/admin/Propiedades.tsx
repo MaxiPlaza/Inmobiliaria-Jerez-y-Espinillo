@@ -86,7 +86,7 @@ export const Propiedades: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-brand-gold/15">
           <div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">Inventario de Propiedades</h1>
-            <p className="text-xs text-gray-500 mt-1">Crea, edita, cambia estados rápidos o elimina propiedades de Jerez°Espinillo</p>
+            <p className="text-xs text-gray-500 mt-1">Crea, edita, cambia estados rápidos o elimina propiedades de MagnusPropiedades</p>
           </div>
           <Button
             variant="primary"

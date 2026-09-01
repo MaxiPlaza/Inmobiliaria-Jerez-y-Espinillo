@@ -39,7 +39,7 @@ export const Home: React.FC = () => {
           <span className="inline-block px-3 py-1 mb-6 text-xs font-semibold uppercase tracking-widest text-brand-gold bg-brand-gold/10 border border-brand-gold/20 rounded-full animate-pulse">
             Residencias Exclusivas
           </span>
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
             Trabajamos para brindar soluciones inmobiliarias confiables, seguras <br className="hidden sm:inline" />
             y <span className="text-brand-gold text-gold-gradient">adaptadas a las necesidades de cada cliente</span>
           </h1>
@@ -134,7 +134,7 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Diferenciales</span>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">¿Por qué elegir Jerez°Espinillo?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">¿Por qué elegir MagnusPropiedades?</h2>
             <p className="max-w-xl mx-auto text-sm text-gray-500 mt-4 leading-relaxed font-light">
               Nuestra reputación se basa en la excelencia, transparencia y una visión de negocios moderna para proteger y hacer crecer tu patrimonio.
             </p>
@@ -191,7 +191,7 @@ export const Home: React.FC = () => {
           {/* Testimonio 1 */}
           <div className="p-8 rounded-xl bg-brand-gray-dark border border-brand-gray-light flex flex-col justify-between text-left">
             <p className="text-sm text-gray-400 italic leading-relaxed font-light">
-              "El profesionalismo de Jerez°Espinillo es inigualable. Me consiguieron un comprador para mi casa de San Isidro en tiempo récord y toda la papelería fue impecable. Recomiendo totalmente su asesoría personalizada."
+              "El profesionalismo de MagnusPropiedades es inigualable. Me consiguieron un comprador para mi casa de San Isidro en tiempo récord y toda la papelería fue impecable. Recomiendo totalmente su asesoría personalizada."
             </p>
             <div className="mt-8 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold text-sm">
@@ -248,7 +248,7 @@ export const Home: React.FC = () => {
             ¿Quieres vender, alquilar o tasar tu propiedad?
           </h2>
           <p className="max-w-xl text-brand-black/80 mb-8 font-medium">
-            Contacta ahora mismo a Jerez°Espinillo vía WhatsApp y recibe asesoramiento inmediato de parte de nuestros profesionales.
+            Contacta ahora mismo a MagnusPropiedades vía WhatsApp y recibe asesoramiento inmediato de parte de nuestros profesionales.
           </p>
           <a
             href={getWhatsappFloatingLink()}

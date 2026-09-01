@@ -23,7 +23,7 @@ export const getWhatsappPropertyLink = (titulo: string, id: string): string => {
 // Enlace de consulta de contacto general
 export const getWhatsappContactLink = (nombre?: string, mensaje?: string): string => {
   const phone = getWhatsappNumber();
-  let text = 'Hola, me gustaría contactarme con la inmobiliaria Jerez°Espinillo.';
+  let text = 'Hola, me gustaría contactarme con la inmobiliaria MagnusPropiedades.';
   if (nombre) {
     text = `Hola, mi nombre es ${nombre}. Quisiera realizar una consulta. ${mensaje ? `Mensaje: ${mensaje}` : ''}`;
   }

@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, Building, Inbox, LogOut, Plus, 
-  Menu, X, Building2 
+  Menu, X 
 } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
+import logo from '../../assets/logo Magnus (1).png';
 
 export const Sidebar: React.FC = () => {
   const { logout } = useAuth();
@@ -64,10 +65,10 @@ export const Sidebar: React.FC = () => {
           {/* Logo y Encabezado */}
           <div className="flex items-center justify-between pb-4 border-b border-brand-gold/10">
             <Link to="/" className="flex items-center gap-2 group">
-              <Building2 className="w-5 h-5 text-brand-gold" />
+              <img src={logo} alt="Logo MagnusPropiedades" className="w-8 h-8 object-contain" />
               <div className="flex flex-col">
                 <span className="text-base font-extrabold tracking-wider text-white">
-                  Jerez<span className="text-brand-gold">°</span>Espinillo
+                  Magnus<span className="text-brand-gold">Propiedades</span>
                 </span>
                 <span className="text-[9px] uppercase font-bold text-gray-500 tracking-widest mt-0.5">Control de Mando</span>
               </div>
