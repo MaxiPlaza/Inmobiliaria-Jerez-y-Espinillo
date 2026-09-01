@@ -58,7 +58,7 @@ export const Contacto: React.FC = () => {
           <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Hablemos</span>
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Contacto</h1>
           <p className="max-w-xl mx-auto text-sm text-gray-500 leading-relaxed font-light">
-            Déjanos tu contacto para una atención premium inmediata. Rellena el formulario simplificado o escríbenos directamente por WhatsApp.
+            Déjanos tu contacto para una atención inmediata. Completa el formulario o escribinos directamente por WhatsApp.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export const Contacto: React.FC = () => {
               // Formulario de Contacto
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <h3 className="text-lg font-bold text-white tracking-wide border-b border-brand-gold/10 pb-3 mb-2">
-                  Registro Rápido de Consulta
+                  Escribinos tu consulta
                 </h3>
                 
                 {errorMsg && (
@@ -112,7 +112,7 @@ export const Contacto: React.FC = () => {
                 <Input
                   id="nombre"
                   label="Nombre Completo"
-                  placeholder="Ej: Luz Yampa"
+                  placeholder="Ej: Maximiliano"
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
                   required
@@ -120,7 +120,7 @@ export const Contacto: React.FC = () => {
 
                 <Input
                   id="telefono"
-                  label="Número de Teléfono"
+                  label="Número de Teléfono-WhatsApp"
                   placeholder="Ej: +54 9 387 123-4567"
                   value={telefono}
                   onChange={(e) => setTelefono(e.target.value)}
@@ -147,7 +147,7 @@ export const Contacto: React.FC = () => {
                 ¿Prefieres hablar de forma <span className="text-brand-gold">inmediata</span>?
               </h3>
               <p className="text-sm text-gray-400 leading-relaxed font-light">
-                Evita esperas e inicia un canal de chat directo con nuestra oficina de atención comercial matriculada. Estamos en línea para resolver tus dudas de tasaciones o compras corporativas.
+                Evita esperas e inicia un canal de chat directo con nuestra oficina de atención comercial. Estamos en línea para resolver tus dudas.
               </p>
 
               {/* Botón WhatsApp Grande Prominente */}
@@ -171,7 +171,7 @@ export const Contacto: React.FC = () => {
                 <div>
                   <h4 className="text-xs font-bold text-white uppercase tracking-wider">Oficinas</h4>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    Oficina Balcarce 175 Oficina 312,<br />
+                    Oficina Mendoza 171,<br />
                     Salta Capital, Argentina
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export const Contacto: React.FC = () => {
                 <div>
                   <h4 className="text-xs font-bold text-white uppercase tracking-wider">Email</h4>
                   <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                    danielespinillo@gmail.com
+                    inmobiliariamagnus26@gmail.com
                   </p>
                 </div>
               </div>

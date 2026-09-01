@@ -84,10 +84,10 @@ export const Catalogo: React.FC = () => {
             Catálogo de Propiedades
           </span>
           <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-1.5 mb-3">
-            Explora nuestras propiedades
+            Catalogo
           </h1>
           <p className="text-sm text-gray-500 font-light max-w-2xl leading-relaxed">
-            Residencias exclusivas y oportunidades de inversión inmobiliaria de alta gama en Argentina. Utiliza los filtros a continuación para refinar tu búsqueda.
+            Utiliza los filtros para agilizar tu búsqueda.
           </p>
         </div>
 

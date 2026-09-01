@@ -44,9 +44,9 @@ export const Servicios: React.FC = () => {
         {/* Cabecera */}
         <div className="text-center mb-16">
           <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Nuestros Servicios</span>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Servicios Inmobiliarios de Lujo</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Servicios Inmobiliarios </h1>
           <p className="max-w-xl mx-auto text-sm text-gray-500 leading-relaxed font-light">
-            Arquitectura de Negocios Inmobiliarios diseñada para proteger e incrementar el patrimonio de los propietarios más exigentes.
+            
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export const Servicios: React.FC = () => {
           <div className="text-left">
             <h2 className="text-2xl font-bold text-white tracking-wide">¿Tienes un requerimiento especial?</h2>
             <p className="text-xs text-gray-500 font-light mt-1 max-w-lg leading-relaxed">
-              Dinos qué estás buscando y nuestro equipo matriculado llevará a cabo una búsqueda personalizada fuera del mercado tradicional.
+              Escribinos y nuestro equipo profesional se pondra en contacto.
             </p>
           </div>
           <Button

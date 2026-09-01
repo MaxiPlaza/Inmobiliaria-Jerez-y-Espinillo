@@ -102,7 +102,7 @@ export const Home: React.FC = () => {
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 text-left">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Selección VIP</span>
+            <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold"></span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Propiedades Destacadas</h2>
           </div>
           <button 
@@ -147,9 +147,9 @@ export const Home: React.FC = () => {
               <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-brand-gold/10 text-brand-gold mb-6 group-hover:bg-brand-gold group-hover:text-brand-black transition-all duration-500">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Martillero Matriculado</h3>
+              <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Corredor inmobiliario y Martillero Matriculado</h3>
               <p className="text-sm text-gray-500 leading-relaxed font-light">
-                Garantizamos operaciones 100% seguras y legales bajo la tutela de profesionales matriculados en los colegios de corretaje correspondientes.
+                Garantizamos operaciones 100% seguras y confiables.
               </p>
             </div>
 
@@ -158,9 +158,9 @@ export const Home: React.FC = () => {
               <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-brand-gold/10 text-brand-gold mb-6 group-hover:bg-brand-gold group-hover:text-brand-black transition-all duration-500">
                 <HeartHandshake className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Atención VIP Personalizada</h3>
+              <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Atención Personalizada</h3>
               <p className="text-sm text-gray-500 leading-relaxed font-light">
-                No somos un portal masivo. Nos enfocamos en darte una atención uno a uno, guiándote de principio a fin según tus requisitos específicos.
+                Nos enfocamos en darte una atención personalizada, ayudandote de principio a fin a concretar tus sueños y objetivos.
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export const Home: React.FC = () => {
               </div>
               <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Seguridad y Confianza</h3>
               <p className="text-sm text-gray-500 leading-relaxed font-light">
-                Tu patrimonio es sagrado. Llevamos a cabo auditorías y verificaciones exhaustivas de todos los títulos y estados crediticios de las propiedades.
+                Tu patrimonio es lo más importante. Sabemos el gran esfuerzo que conlleva. Nuestra mision es proteger.
               </p>
             </div>
 
@@ -191,15 +191,15 @@ export const Home: React.FC = () => {
           {/* Testimonio 1 */}
           <div className="p-8 rounded-xl bg-brand-gray-dark border border-brand-gray-light flex flex-col justify-between text-left">
             <p className="text-sm text-gray-400 italic leading-relaxed font-light">
-              "El profesionalismo de MagnusPropiedades es inigualable. Me consiguieron un comprador para mi casa de San Isidro en tiempo récord y toda la papelería fue impecable. Recomiendo totalmente su asesoría personalizada."
+              "El profesionalismo de MagnusPropiedades es inigualable. Me consiguieron un comprador para mi terreno en cerrillos en tiempo récord y toda la papelería fue impecable. Recomiendo totalmente su asesoría personalizada."
             </p>
             <div className="mt-8 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold text-sm">
                 ED
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-white">Eduardo Di Cola</h4>
-                <p className="text-xs text-gray-500">Propietario en San Isidro</p>
+                <h4 className="text-sm font-semibold text-white">Eduardo Torres</h4>
+                <p className="text-xs text-gray-500">Propietario en Cerrillos</p>
               </div>
             </div>
           </div>
@@ -207,15 +207,15 @@ export const Home: React.FC = () => {
           {/* Testimonio 2 */}
           <div className="p-8 rounded-xl bg-brand-gray-dark border border-brand-gray-light flex flex-col justify-between text-left">
             <p className="text-sm text-gray-400 italic leading-relaxed font-light">
-              "Excelente atención en el alquiler temporario en CABA. El departamento estaba impecable tal cual las fotos y el servicio de WhatsApp para coordinar dudas fue veloz. Profesionalismo puro."
+              "Excelente atención en el alquiler temporario en casa. Buena predisposición para mostrarla, la escribana muy amable ."
             </p>
             <div className="mt-8 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold text-sm">
                 SO
               </div>
               <div>
-                <h4 className="text-sm font-semibold text-white">Sofía Oneto</h4>
-                <p className="text-xs text-gray-500">Inquilina en Recoleta</p>
+                <h4 className="text-sm font-semibold text-white">Ezequiel Paz</h4>
+                <p className="text-xs text-gray-500">Inquilino en Barrio Lavalle</p>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export const Home: React.FC = () => {
           {/* Testimonio 3 */}
           <div className="p-8 rounded-xl bg-brand-gray-dark border border-brand-gray-light flex flex-col justify-between text-left">
             <p className="text-sm text-gray-400 italic leading-relaxed font-light">
-              "Buscaba un lote en Nordelta con requerimientos muy puntuales de orientación y costa. Se tomaron el trabajo de buscar fuera de catálogo hasta encontrar exactamente mi lote ideal. Invalorable servicio."
+              "Vivo en el sur y queria invertir en un terrenito en Salta y me consiguieron una buena zona a muy buen precio y me ayudaron mucho con el tramite. Hoy tengo mi terreno en Salta"
             </p>
             <div className="mt-8 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold text-sm">
@@ -245,10 +245,10 @@ export const Home: React.FC = () => {
         <div className="relative max-w-4xl mx-auto px-4 z-10 flex flex-col items-center">
           <MessageSquare className="w-8 h-8 mb-4 animate-bounce" />
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
-            ¿Quieres vender, alquilar o tasar tu propiedad?
+            ¿Queres vender, alquilar o tasar tu propiedad?
           </h2>
           <p className="max-w-xl text-brand-black/80 mb-8 font-medium">
-            Contacta ahora mismo a MagnusPropiedades vía WhatsApp y recibe asesoramiento inmediato de parte de nuestros profesionales.
+            Contactanos.
           </p>
           <a
             href={getWhatsappFloatingLink()}

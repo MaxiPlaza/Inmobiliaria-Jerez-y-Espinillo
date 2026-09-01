@@ -12,10 +12,10 @@ export const Nosotros: React.FC = () => {
         
         {/* Cabecera */}
         <div className="text-center mb-16">
-          <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Nuestra Firma</span>
-          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Bienvenidos a MagnusPropiedades</h1>
+          <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Somos</span>
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white mt-2 mb-4">Magnus Propiedades</h1>
           <p className="max-w-xl mx-auto text-sm text-gray-500 leading-relaxed font-light">
-            Una empresa salteña que surge de la fusión de dos visiones complementarias.
+            Una empresa salteña que surge de visiones profesionales complementarias.
           </p>
         </div>
 
@@ -25,8 +25,8 @@ export const Nosotros: React.FC = () => {
           {/* Texto Historia */}
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-wide">
-              Corredor Inmobiliario y Martillero Publico <br />
-              & <span className="text-brand-gold text-gold-gradient">Oscar Daniel Espinillo Cifuentes y la Dra. Claudia Jerez, Abogada</span>
+               <br />
+               <span className="text-brand-gold text-gold-gradient"></span>
             </h2>
             <p className="text-sm text-gray-400 leading-relaxed font-light">
               Comprometidos con brindar soluciones inmobilirias confiables, profesionales y personalizadas.
@@ -40,7 +40,7 @@ export const Nosotros: React.FC = () => {
                 <div className="w-10 h-10 rounded-full border-2 border-brand-black bg-brand-gray-light flex items-center justify-center font-bold text-white text-xs">ME</div>
               </div>
               <p className="text-xs text-gray-500 font-medium leading-relaxed">
-                Asesorado por <span className="text-white font-semibold">Oscar Daniel Espinillo</span> y la Dra. Claudia Jerez.
+                Corredor Inmobiliario y Martillero Publico. <span className="text-white font-semibold">Oscar Daniel Espinillo & Asociados</span>.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export const Nosotros: React.FC = () => {
             </div>
             <h3 className="text-lg font-semibold text-white tracking-wide mb-3">Nuestra Misión</h3>
             <p className="text-sm text-gray-500 leading-relaxed font-light">
-              Brindar soluciones inmobiliarias de alto nivel técnico y comercial, resguardando en todo momento el capital de nuestros clientes y garantizando el marco legal en transacciones de compraventa, alquiler y loteo.
+              Brindar soluciones y asesoramientos inmobiliarios a nivel tecnico y comercial, resguardando a nuestros clientes garantizando legalidad y transparencia en todas nuestras transacciones.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export const Nosotros: React.FC = () => {
           <Users className="w-8 h-8 text-brand-gold mb-4" />
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">¿Listo para dar el siguiente paso?</h2>
           <p className="text-sm text-gray-500 leading-relaxed font-light max-w-lg mb-8">
-            Coordinemos una entrevista en nuestras oficinas para diagramar la mejor estrategia comercial para tu propiedad.
+            Coordinemos una visita.
           </p>
           <Button
             variant="primary"

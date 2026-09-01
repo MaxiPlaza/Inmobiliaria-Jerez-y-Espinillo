@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-sm text-gray-500">
-              Arquitectura de Negocios Inmobiliarios. Residencias exclusivas, tasaciones profesionales y desarrollos urbanos de alta categoría en Salta y todo el país.
+              Ventas, Tasaciones y Administración de Propiedades.
             </p>
           </div>
 
@@ -43,8 +43,8 @@ export const Footer: React.FC = () => {
             <div>
               <h4 className="text-sm font-semibold uppercase tracking-wider text-white mb-4 md:text-right">Contacto</h4>
               <p className="text-sm text-gray-500 mb-4 md:text-right">
-                 Oficina Balcarce 175 Oficina 312 Salta, Argentina<br />
-                danielespinillo@gmail.com <br />
+                 Oficina Mendoza 171 -Salta, Argentina<br />
+                inmobiliariamagnus26@gmail.com <br />
                 Oscar Daniel Espinillo Cifuentes <br />
                 Cucis 650 m.p
               </p>
